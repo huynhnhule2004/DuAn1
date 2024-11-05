@@ -117,8 +117,8 @@ CSS STRUCTURE:
 
 /* Fonts */
 :root {
-  --body-font: 'Montserrat', sans-serif;
-  --heading-font: 'Montserrat', sans-serif;
+  --body-font: 'Montserrat', cursive;
+  --heading-font: 'Montserrat', cursive;
   --secondary-font: 'Montserrat', sans-serif;
 }
 
@@ -135,7 +135,7 @@ body {
 
   --bs-light-rgb: 248, 248, 248;
 
-  --bs-font-sans-serif: 'Montserrat', sans-serif;
+  --bs-font-sans-serif: 'Montserrat', cursive;
   --bs-body-font-family: var(--bs-font-sans-serif);
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
@@ -478,7 +478,7 @@ iconify-icon.quote-icon {
   color: #908F8D;
   font-size: 1rem;
   font-weight: 400;
-  line-height: normal;
+  line-height: 1.5rem;
   font-family: var(--secondary-font);
 }
 
@@ -674,3 +674,286 @@ Single Product section style start
   color: var(--light-color);
   background-color: var(--accent-color);
 }
+
+@import url(//fonts.googleapis.com/css?family=Montserrat:300,500);
+.team4 {
+  font-family: "Montserrat", sans-serif;
+	color: #8d97ad;
+  font-weight: 300;
+}
+
+.team4 h1, .team4 h2, .team4 h3, .team4 h4, .team4 h5, .team4 h6 {
+  color: #3e4555;
+}
+
+.team4 .font-weight-medium {
+	font-weight: 500;
+}
+
+.team4 h5 {
+    line-height: 22px;
+    font-size: 18px;
+}
+
+.team4 .subtitle {
+    color: #8d97ad;
+    line-height: 24px;
+		font-size: 13px;
+}
+
+.team4 ul li a {
+  color: #8d97ad;
+  padding-right: 15px;
+  -webkit-transition: 0.1s ease-in;
+  -o-transition: 0.1s ease-in;
+  transition: 0.1s ease-in;
+}
+
+.team4 ul li a:hover {
+  -webkit-transform: translate3d(0px, -5px, 0px);
+  transform: translate3d(0px, -5px, 0px);
+	color: #316ce8;
+}
+/*about */
+
+.counter-box {
+  display: block;
+  background: #f6f6f6;
+  padding: 35px 30px 40px;
+  text-align: center
+}
+
+.counter-box p {
+  margin: 5px 10px 0;
+  padding: 0;
+  color: #909090;
+  font-size: 18px;
+  font-weight: 500
+}
+
+.counter-box i {
+  font-size: 60px;
+  margin: 0 0 15px;
+  color: #d2d2d2
+}
+
+.counter {
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+  color: #666;
+  line-height: 28px
+}
+
+.counter-box.colored {
+  background: #DEAD6F
+}
+
+.counter-box.colored p,
+.counter-box.colored i,
+.counter-box.colored .counter {
+  color: #fff
+}
+
+
+.container1 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F9F3EC;
+}
+.testimonial {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  padding: 50px 0;
+  overflow: hidden;
+}
+.testimonial .image {
+  height: 170px;
+  width: 170px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.testimonial .slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 30px;
+  height: 100%;
+  width: 100%;
+}
+.slide p {
+  text-align: center;
+  padding: 0 160px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+}
+.slide .quote-icon {
+  font-size: 30px;
+  color: #F9F3EC;
+}
+.slide .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.details .name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+.details .job {
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+}
+/* swiper button css */
+.nav-btn {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  transform: translateY(30px);
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
+}
+.nav-btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.nav-btn::after,
+.nav-btn::before {
+  font-size: 20px;
+  color: #fff;
+}
+.swiper-pagination-bullet {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.swiper-pagination-bullet-active {
+  background-color: #F9F3EC;
+}
+.line-spacing {
+  line-height: 2em; /* Bạn có thể điều chỉnh giá trị để có khoảng cách dòng mong muốn */
+}
+@media screen and (max-width: 768px) {
+  .slide p {
+    padding: 0 20px;
+  }
+  .nav-btn {
+    display: none;
+  }
+  @media (max-width: 768px) {
+    .banner-title {
+        font-size: 1.5rem; /* Thay đổi kích thước chữ cho tiêu đề */
+    }
+    
+    .content-wrapper {
+        padding: 1rem; /* Giảm padding cho thiết bị nhỏ */
+    }
+
+    .btn {
+        font-size: 1rem; /* Thay đổi kích thước chữ cho nút */
+    }
+}
+}
+
+/*proflie */
+.bg-secondary-soft {
+  background-color: rgba(208, 212, 217, 0.1) !important;
+}
+.rounded {
+  border-radius: 5px !important;
+}
+.py-5 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+.px-4 {
+  padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important;
+}
+.file-upload .square {
+  height: 250px;
+  width: 250px;
+  margin: auto;
+  vertical-align: middle;
+  border: 1px solid #e5dfe4;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.text-secondary {
+  --bs-text-opacity: 1;
+  color: rgba(208, 212, 217, 0.5) !important;
+}
+.btn-success-soft {
+  color: #28a745;
+  background-color: rgba(40, 167, 69, 0.1);
+}
+.btn-danger-soft {
+  color: #dc3545;
+  background-color: rgba(220, 53, 69, 0.1);
+}
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #29292e;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #e5dfe4;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 5px;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+/*cart */
+@media (max-width: 576px) {
+  .table thead {
+      display: none; /* Ẩn tiêu đề bảng trên màn hình nhỏ */
+  }
+
+  .table, .table tbody, .table tr, .table td {
+      display: block; /* Hiển thị các phần tử bảng thành khối */
+      width: 100%; /* Đảm bảo bảng chiếm toàn bộ chiều rộng */
+      box-sizing: border-box; /* Đảm bảo kích thước không vượt quá */
+  }
+
+  .table tr {
+      margin-bottom: 15px; /* Thêm khoảng cách giữa các hàng */
+      border: 1px solid #ddd; /* Thêm đường viền cho các hàng */
+      border-radius: 8px; /* Bo tròn các góc của hàng */
+      overflow: hidden; /* Ẩn các phần thừa */
+  }
+
+  .table td {
+      text-align: left; /* Định dạng căn lề cho ô */
+      position: relative; /* Định vị cho vị trí */
+      padding-left: 50%; /* Thêm khoảng cách bên trái cho nội dung */
+      padding-top: 10px; /* Thêm khoảng cách trên */
+      padding-bottom: 10px; /* Thêm khoảng cách dưới */
+      padding-right: 10px; /* Thêm khoảng cách bên phải để tránh bị tràn */
+  }
+
+  .table td::before {
+      content: attr(data-label); /* Sử dụng thuộc tính data-label để hiển thị tên của ô */
+      position: absolute; /* Đặt vị trí của tên ô */
+      left: 10px; /* Định vị bên trái */
+      width: 50%; /* Chiếm 50% chiều rộng */
+      padding-right: 10px; /* Thêm khoảng cách bên phải */
+      white-space: nowrap; /* Ngăn nội dung bị xuống dòng */
+      font-weight: bold; /* Làm nổi bật tên ô */
+  }
+}
+
+
