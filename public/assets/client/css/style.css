@@ -117,8 +117,8 @@ CSS STRUCTURE:
 
 /* Fonts */
 :root {
-  --body-font: 'Chilanka', cursive;
-  --heading-font: 'Chilanka', cursive;
+  --body-font: 'Montserrat', sans-serif;
+  --heading-font: 'Montserrat', sans-serif;
   --secondary-font: 'Montserrat', sans-serif;
 }
 
@@ -135,7 +135,7 @@ body {
 
   --bs-light-rgb: 248, 248, 248;
 
-  --bs-font-sans-serif: 'Chilanka', cursive;
+  --bs-font-sans-serif: 'Montserrat', sans-serif;
   --bs-body-font-family: var(--bs-font-sans-serif);
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
@@ -478,7 +478,7 @@ iconify-icon.quote-icon {
   color: #908F8D;
   font-size: 1rem;
   font-weight: 400;
-  line-height: normal;
+  line-height: 1.5rem;
   font-family: var(--secondary-font);
 }
 
@@ -674,3 +674,16 @@ Single Product section style start
   color: var(--light-color);
   background-color: var(--accent-color);
 }
+/* Responsive for product */
+@media (max-width: 768px) {
+  .swiper-slide {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .card {
+      width: 100%;
+  }
+}
+

@@ -110,11 +110,11 @@ class Header extends BaseView
 
                 </defs>
             </svg>
-
+<!-- 
             <div class="preloader-wrapper">
                 <div class="preloader">
                 </div>
-            </div>
+            </div> -->
 
             <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasCart"
                 aria-labelledby="My Cart">
@@ -187,7 +187,7 @@ class Header extends BaseView
                         <div class="col-sm-4 col-lg-3 text-center text-sm-start">
                             <div class="main-logo">
                                 <a href="index.html">
-                                    <img src="public/assets/client/images/logo.png" alt="logo" class="img-fluid">
+                                    <img src="/public/assets/client/images/logo.png" alt="logo" class="img-fluid">
                                 </a>
                             </div>
                         </div>
@@ -196,7 +196,7 @@ class Header extends BaseView
                             <div class="search-bar border rounded-2 px-3 border-dark-subtle">
                                 <form id="search-form" class="text-center d-flex align-items-center" action="" method="">
                                     <input type="text" class="form-control border-0 bg-transparent"
-                                        placeholder="Search for more than 10,000 products" />
+                                        placeholder="Tìm kiếm..." />
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                         <path fill="currentColor"
                                             d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z" />
@@ -277,48 +277,29 @@ class Header extends BaseView
 
                             <div class="offcanvas-body justify-content-between">
                                 <select class="filter-categories border-0 mb-0 me-5">
-                                    <option>Shop by Category</option>
-                                    <option>Clothes</option>
-                                    <option>Food</option>
-                                    <option>Food</option>
-                                    <option>Toy</option>
+                                    <option>Mua sắm theo danh mục</option>
+                                    <option>Tất cả</option>
+                                    <option>Chó</option>
+                                    <option>Mèo</option>
+                                    <option>Thức ăn</option>
                                 </select>
 
                                 <ul class="navbar-nav menu-list list-unstyled d-flex gap-md-3 mb-0">
                                     <li class="nav-item">
-                                        <a href="index.html" class="nav-link active">Home</a>
+                                        <a href="index.html" class="nav-link active">Trang chủ</a>
                                     </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" role="button" id="pages" data-bs-toggle="dropdown"
-                                            aria-expanded="false">Pages</a>
-                                        <ul class="dropdown-menu" aria-labelledby="pages">
-                                            <li><a href="index.html" class="dropdown-item">About Us</a></li>
-                                            <li><a href="index.html" class="dropdown-item">Shop</a></li>
-                                            <li><a href="index.html" class="dropdown-item">Single Product</a></li>
-                                            <li><a href="index.html" class="dropdown-item">Cart</a></li>
-                                            <li><a href="index.html" class="dropdown-item">Wishlist</a></li>
-                                            <li><a href="index.html" class="dropdown-item">Checkout</a></li>
-                                            <li><a href="index.html" class="dropdown-item">Blog</a></li>
-                                            <li><a href="index.html" class="dropdown-item">Single Post</a></li>
-                                            <li><a href="index.html" class="dropdown-item">Contact</a></li>
-                                            <li><a href="index.html" class="dropdown-item">FAQs</a></li>
-                                            <li><a href="index.html" class="dropdown-item">Account</a></li>
-                                            <li><a href="index.html" class="dropdown-item">Thankyou</a></li>
-                                            <li><a href="index.html" class="dropdown-item">Error 404</a></li>
-                                            <li><a href="index.html" class="dropdown-item">Styles</a></li>
-                                        </ul>
+                                   
+                                    <li class="nav-item">
+                                        <a href="/products" class="nav-link">Sản phẩm</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="index.html" class="nav-link">Shop</a>
+                                        <a href="/blogs" class="nav-link">Bài viết</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="index.html" class="nav-link">Blog</a>
+                                        <a href="index.html" class="nav-link">Giới thiệu</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="index.html" class="nav-link">Contact</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="index.html" class="nav-link">Others</a>
+                                        <a href="index.html" class="nav-link">Liên hệ</a>
                                     </li>
                                 </ul>
 
