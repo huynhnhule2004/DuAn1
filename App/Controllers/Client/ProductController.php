@@ -77,25 +77,13 @@ class ProductController
         Index::render($data);
         Footer::render();
     }
-    public static function detail($id)
+    public static function detail()
     {
-        $product_detail = [
-            'id' => $id,
-            'name' => 'Product 1',
-            'description' => 'Description Product 1',
-            'price' => 100000,
-            'discount_price' => 10000,
-            'image' => 'product.jpg',
-            'status' => 1
-        ];
-        $data = [
-            'product' => $product_detail
-        ];
         Header::render();
-
-        Detail::render($data);
+        Detail::render();
         Footer::render();
     }
+    
     public static function getProductByCategory($id)
     {
     }
