@@ -11,7 +11,7 @@ class Header extends BaseView
     {
 
 
-        ?>
+?>
 
 
         <!DOCTYPE html>
@@ -30,7 +30,9 @@ class Header extends BaseView
         </head>
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
@@ -41,7 +43,9 @@ class Header extends BaseView
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Chilanka&family=Montserrat:wght@300;400;500&display=swap"
             rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="<?= APP_URL ?>/public/assets/client/css/style.css">
+
 
         </head>
 
@@ -111,10 +115,10 @@ class Header extends BaseView
                 </defs>
             </svg>
 
-            <div class="preloader-wrapper">
+            <!-- <div class="preloader-wrapper">
                 <div class="preloader">
                 </div>
-            </div>
+            </div> -->
 
             <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasCart"
                 aria-labelledby="My Cart">
@@ -232,13 +236,17 @@ class Header extends BaseView
                         <div class="d-flex d-lg-none align-items-end mt-3">
                             <ul class="d-flex justify-content-end list-unstyled m-0">
                                 <li>
-                                    <a href="account.html" class="mx-3">
+                                    <a href="" class="mx-3">
                                         <iconify-icon icon="healthicons:person" class="fs-4"></iconify-icon>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="wishlist.html" class="mx-3">
-                                        <iconify-icon icon="mdi:heart" class="fs-4"></iconify-icon>
+                                    <a href="#" class="mx-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
+                                        aria-controls="offcanvasCart">
+                                        <iconify-icon icon="mdi:heart" class="fs-4 position-relative"></iconify-icon>
+                                        <span class="position-absolute translate-middle badge rounded-circle bg-primary pt-2">
+                                            03
+                                        </span>
                                     </a>
                                 </li>
 
@@ -309,7 +317,7 @@ class Header extends BaseView
                                         </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="index.html" class="nav-link">Shop</a>
+                                        <a href="/about" class="nav-link">Shop</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="index.html" class="nav-link">Blog</a>
@@ -325,24 +333,19 @@ class Header extends BaseView
                                 <div class="d-none d-lg-flex align-items-end">
                                     <ul class="d-flex justify-content-end list-unstyled m-0">
                                         <li>
-                                            <a href="index.html" class="mx-3">
+                                            <a href="/profile" class="mx-3">
                                                 <iconify-icon icon="healthicons:person" class="fs-4"></iconify-icon>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="index.html" class="mx-3">
+                                            <a href="/wishlist" class="mx-3">
                                                 <iconify-icon icon="mdi:heart" class="fs-4"></iconify-icon>
                                             </a>
                                         </li>
 
-                                        <li class="">
-                                            <a href="index.html" class="mx-3" data-bs-toggle="offcanvas"
-                                                data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
-                                                <iconify-icon icon="mdi:cart" class="fs-4 position-relative"></iconify-icon>
-                                                <span
-                                                    class="position-absolute translate-middle badge rounded-circle bg-primary pt-2">
-                                                    03
-                                                </span>
+                                        <li>
+                                            <a href="/cart" class="mx-3">
+                                                <iconify-icon icon="mdi:cart" class="fs-4"></iconify-icon>
                                             </a>
                                         </li>
                                     </ul>
@@ -392,9 +395,9 @@ class Header extends BaseView
                 </div>
             </nav> -->
 
-            <?php
+    <?php
 
     }
 }
 
-?>
+    ?>
