@@ -11,7 +11,7 @@ class Header extends BaseView
     {
 
 
-        ?>
+?>
 
 
         <!DOCTYPE html>
@@ -30,7 +30,9 @@ class Header extends BaseView
         </head>
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
@@ -41,6 +43,7 @@ class Header extends BaseView
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Chilanka&family=Montserrat:wght@300;400;500&display=swap"
             rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="<?= APP_URL ?>/public/assets/client/css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         </head>
@@ -111,10 +114,10 @@ class Header extends BaseView
                 </defs>
             </svg>
 
-            <div class="preloader-wrapper">
+            <!-- <div class="preloader-wrapper">
                 <div class="preloader">
                 </div>
-            </div>
+            </div> -->
 
             <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasCart"
                 aria-labelledby="My Cart">
@@ -237,8 +240,12 @@ class Header extends BaseView
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="wishlist.html" class="mx-3">
-                                        <iconify-icon icon="mdi:heart" class="fs-4"></iconify-icon>
+                                    <a href="#" class="mx-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
+                                        aria-controls="offcanvasCart">
+                                        <iconify-icon icon="mdi:heart" class="fs-4 position-relative"></iconify-icon>
+                                        <span class="position-absolute translate-middle badge rounded-circle bg-primary pt-2">
+                                            03
+                                        </span>
                                     </a>
                                 </li>
 
@@ -392,9 +399,9 @@ class Header extends BaseView
                 </div>
             </nav> -->
 
-            <?php
+    <?php
 
     }
 }
 
-?>
+    ?>
